@@ -1,0 +1,95 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+
+* {
+    font-size: 100%;
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 숨김 컨텐츠 */
+.readable-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+}
+
+body {
+    background-color: #00C473;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 11px;
+}
+
+.header {
+    margin: 23px auto;
+    width: 790px;
+    padding: 0;
+    position: sticky;
+}
+
+/* 헤더 */
+.logo {
+    position: absolute;
+    top: -6px;
+    left: 9px;
+}
+
+.logo img {
+    width: 90px;
+    height: 25px;
+}
+
+.menu {
+    margin-left: 14px;
+}
+
+.menu-item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 2.5em;
+    font-weight: 500;
+    position: relative;
+    width: 550px;
+    left: 100px;
+}
+
+.menu-item li {
+    display: inline-block;
+    padding: 0 15px;
+    color: #fff;
+}
+
+.login {
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 13px;
+    font-weight: 800;
+    font-size: 1em;
+    color: #00C473;
+    padding: 4px 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.new::after {
+    content: "N";
+    font-size: 0.2em;
+    font-weight: 900;
+    background-color: red;
+    border-radius: 10px;
+    padding: 0 3.5px;
+    position: absolute;
+    line-height: 11px;
+    top: 4;
+    height: 10px;
+}
