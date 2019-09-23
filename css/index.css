@@ -1,9 +1,11 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+@import url('./font/fontello.css');
 
 * {
-    font-size: 100%;
-    font: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 a {
@@ -11,8 +13,16 @@ a {
     color: inherit;
 }
 
-/* 숨김 컨텐츠 */
-.readable-hidden {
+html {
+    font-size: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    background: #00C473;
+}
+
+.a11y-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -22,74 +32,177 @@ a {
     white-space: nowrap;
 }
 
-body {
-    background-color: #00C473;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 11px;
-}
-
 .header {
-    margin: 23px auto;
-    width: 790px;
-    padding: 0;
-    position: sticky;
+    height: 80px;
+    padding: 50px 88px;
+    background: #00C473;
 }
 
-/* 헤더 */
 .logo {
-    position: absolute;
-    top: -6px;
-    left: 9px;
+    height: 31px;
+    padding-top: 25px;
+    margin-left: 15px;
 }
 
 .logo img {
-    width: 90px;
-    height: 25px;
+    width: 130px;
+    height: auto;
 }
 
 .menu {
-    margin-left: 14px;
+    white-space: nowrap;
 }
 
 .menu-item {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    line-height: 2.5em;
-    font-weight: 500;
+    width: 630px;
+    margin-left: 130px;
     position: relative;
-    width: 550px;
-    left: 100px;
+    display: inline-block;
 }
 
 .menu-item li {
     display: inline-block;
-    padding: 0 15px;
+    padding-left: 50px;
+    font-size: 1.5rem;
     color: #fff;
+}
+
+.menu-item li:nth-child(3n) a::after {
+    content: "N";
+    font-size: 0.2em;
+    background: #E94E24;
+    border-radius: 10px;
+    position: absolute;
+    padding: 2px 5px;
+    margin-left: 3px;
 }
 
 .login {
     background: #fff;
-    border: 2px solid #fff;
-    border-radius: 13px;
-    font-weight: 800;
-    font-size: 1em;
     color: #00C473;
-    padding: 4px 20px;
-    position: absolute;
-    top: 0;
-    right: 0;
+    border-radius: 35px;
+    padding: 6px 34px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-left: 230px;
 }
 
-.new::after {
-    content: "N";
-    font-size: 0.2em;
-    font-weight: 900;
-    background-color: red;
-    border-radius: 10px;
-    padding: 0 3.5px;
-    position: absolute;
-    line-height: 11px;
-    top: 4;
-    height: 10px;
+.intro {
+    background-image: url('https://cdn.jandi.com/landing/assets/images/main/baa3d8b4.top_bar_bg.png');
+    position: fixed;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+    height: 50px;
+    font-size: 1.4rem;
+    z-index: 10;
 }
+
+.intro-link {
+    background: #fff;
+    color: #46566D;
+    border-radius: 4px;
+    padding: 3px 13px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-left: 9px;
+}
+
+.icon-right::after {
+    font-family: 'fontello';
+    content: '\f105';
+    margin-left: 8px;
+}
+
+.icon-cancel {
+    float: right;
+    width: 40px;
+    height: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 2em;
+}
+
+section {
+    position: relative;
+}
+
+.promotion1 {
+    margin: 120px 90px;
+}
+
+.divider {
+    position: absolute;
+    background: #fff;
+    width: 8800px;
+    height: 2000px;
+    left: -4600px;
+    top: 900px;
+    transform: rotate(-28deg) translate(0%,0) scaleY(1);
+}
+
+.promotion1-detail {
+    width: 380px;
+}
+
+.promotion1-detail img {
+    width: auto;
+    height: 50px;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.promotion1-btn {
+   white-space: nowrap;
+}
+
+.description {
+    font-size: 1.8rem;
+    color: #fff;
+    line-height: 25px;
+    margin-bottom: 45px; 
+}
+
+.btn {
+    font-size: 1.6rem;
+    border-radius: 25px;
+    padding: 10px 70px;
+    font-weight: 700;
+    box-shadow: 5px 8px 5px rgba(0, 0, 0, 0.15);
+}
+
+.btn1 {
+    background: rgba(11, 146, 90, 0.94);
+    color: #fff;
+    margin-right: 5px;
+}
+
+.btn2 {
+    background: #fff;
+    color: #00B067;
+}
+
+.aa {
+    position: relative;
+}
+
+.bg-item {
+    background: red url('/img/bg.png') no-repeat;
+    background-size: 550px;
+    width: 560px;
+    height: 480px;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+/* .sponsor {
+    position: relative;
+}
+
+.linkage {
+    position: relative;
+} */
+
