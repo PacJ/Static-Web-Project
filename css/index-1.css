@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
 
 * {
-    font-size: 100%;
+    font-size: 10px;
     font: inherit;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 a {
@@ -11,7 +12,7 @@ a {
     color: inherit;
 }
 
-/* 숨김 컨텐츠 */
+ /* 숨김 컨텐츠  */
 .a11y-hidden {
     position: absolute;
     width: 1px;
@@ -21,34 +22,63 @@ a {
     clip: rect(0,0,0,0);
     white-space: nowrap;
 }
-
-body {
-    background-color: #00C473;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 11px;
+/* 소개 자료 배너*/
+.intro {
+    background-image: url('https://cdn.jandi.com/landing/assets/images/main/baa3d8b4.top_bar_bg.png');
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+    font-size: 0.9rem;
 }
 
-.header {
-    margin: 23px auto;
-    width: 790px;
-    padding: 0;
-    position: sticky;
+.intro-link {
+    background: #fff;
+    color: #46566D;
+    font-weight: 700;
+    border-radius: 4px;
+    padding: 3px 13px;
+    margin-left: 9px;
+}
+
+.icon-right::after {
+    font-family: 'fontello';
+    content: '\f105';
+    margin-left: 8px;
+}
+
+.icon-cancel {
+    float: right;
+    width: 40px;
+    height: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 2em;
 }
 
 /* 헤더 */
+.header, .main-container {
+    background-color: #00C473;
+    margin: 0 auto;
+    width: 1089px;
+    padding: 0 94px;
+    position: relative;
+}
+
 .logo {
     position: absolute;
-    top: -6px;
-    left: 9px;
+    top: 14px;
+    left: 90px;
 }
 
 .logo img {
-    width: 90px;
-    height: 25px;
+    width: 130px;
+    height: auto;
 }
 
 .menu {
     margin-left: 14px;
+    padding-top: 20px;
 }
 
 .menu-item {
@@ -56,10 +86,9 @@ body {
     margin: 0;
     padding: 0;
     line-height: 2.5em;
-    font-weight: 500;
-    position: relative;
+    font-weight: 400;
+    margin-left: 140px;
     width: 550px;
-    left: 100px;
 }
 
 .menu-item li {
@@ -70,15 +99,14 @@ body {
 
 .login {
     background: #fff;
-    border: 2px solid #fff;
-    border-radius: 13px;
-    font-weight: 800;
+    border-radius: 15px;
+    font-weight: 700;
     font-size: 1em;
     color: #00C473;
-    padding: 4px 20px;
+    padding: 4px 30px;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 25px;
+    right: 105px;
 }
 
 .new::after {
@@ -87,9 +115,25 @@ body {
     font-weight: 900;
     background-color: red;
     border-radius: 10px;
-    padding: 0 3.5px;
+    padding: 2px 4px;
     position: absolute;
-    line-height: 11px;
+    line-height: 10px;
     top: 4;
     height: 10px;
+}
+
+/* 프로모션1 */
+.promotion1 {
+    background: skyblue;
+}
+
+.divider {
+    position: absolute;
+    background: #fff;
+    width: 8800px;
+    height: 2000px;
+    left: -4600px;
+    top: 900px;
+    transform: rotate(-28deg) translate(0%,0) scaleY(1);
+    z-index: -1;
 }
