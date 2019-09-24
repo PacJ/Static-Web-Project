@@ -1,213 +1,390 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
-@import url('./font/fontello.css');
-
+@import url('/css/fontello.css');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 a {
     text-decoration: none;
     color: inherit;
 }
-
+li{
+    list-style: none;
+}
 html {
-    font-size: 10px;
-    font-family: 'Noto Sans KR', sans-serif;
+   font-size: 10px;
+   font-family: 'Noto Sans KR', sans-serif;
 }
-
 body {
-    background: #00C473;
+   background: #00C473;
 }
-
-.a11y-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    white-space: nowrap;
-}
-
-.header {
-    height: 80px;
-    padding: 0 88px 0 95px;
-    background: #00C473;
-}
-
-.logo {
-    height: 31px;
-    display: inline-block;
+.btn{
     position: relative;
-    width: 130px;
-    top: 25px;
-    /* padding-top: 25px;
-    margin-left: 15px; */
-}
-
-.logo a {
-    position: absolute;
-    height: 31px;
-}
-.logo img{
-    width: 130px;
-    height:auto;
-}
-
-.menu {
-    white-space: nowrap;
-}
-
-.menu-item {
-    width: 630px;
-    margin-left: 130px;
-    /* position: absolute;
-    top: 30px; */
-    display: inline-block;
-}
-
-.menu-item li {
-    display: inline-block;
-    padding-left: 50px;
-    font-size: 1.5rem;
-    color: #fff;
-}
-
-.menu-item li:nth-child(3n) a::after {
-    content: "N";
-    font-size: 0.2em;
-    background: #E94E24;
-    border-radius: 10px;
-    position: absolute;
-    padding: 2px 5px;
-    margin-left: 3px;
-}
-
-.login {
-    background: #fff;
-    color: #00C473;
-    border-radius: 35px;
-    padding: 6px 34px;
-    font-size: 1.6rem;
-    font-weight: 700;
-    margin-left: 230px;
-}
-
-.intro {
-    background-image: url('https://cdn.jandi.com/landing/assets/images/main/baa3d8b4.top_bar_bg.png');
-    position: fixed;
-    width: 100%;
+    transition: 250ms;
     top: 0;
-    text-align: center;
-    color: #fff;
-    line-height: 50px;
-    height: 50px;
-    font-size: 1.4rem;
-    z-index: 10;
 }
-
-.intro-link {
-    background: #fff;
-    color: #46566D;
-    border-radius: 4px;
-    padding: 3px 13px;
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-left: 9px;
+.btn:hover{
+    box-shadow: none;
+    top: 2px;
 }
-
-.icon-right::after {
-    font-family: 'fontello';
-    content: '\f105';
-    margin-left: 8px;
-}
-
-.icon-cancel {
-    float: right;
-    width: 40px;
-    height: auto;
-    overflow: hidden;
-    white-space: nowrap;
-    font-size: 2em;
-}
-
-/* section {
-    position: relative;
-} */
-
-/* .promotion1 {
-    width: 100%;
-    height: 500px;
-}
-
-.divider {
-    position: absolute;
-    background: #fff;
-    width: 8800px;
-    height: 2000px;
-    left: -4600px;
-    top: 900px;
-    transform: rotate(-28deg) translate(0%,0) scaleY(1);
-    z-index: -1;
-}
-
-.promotion1-detail {
-    width: 380px;
-}
-
-.promotion1-detail img {
-    width: auto;
-    height: 50px;
-    display: block;
-    margin-bottom: 25px;
-}
-
-.promotion1-btn {
+.a11y-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   overflow: hidden;
+   clip: rect(0,0,0,0);
    white-space: nowrap;
 }
-
+.header {
+   height: 80px;
+   padding: 0 88px 0 95px;
+   background: #00C473;
+   position: relative;
+}
+.logo{
+   display: inline-block;
+   height: 35px;
+   position: absolute;
+   top: 25px;
+}
+.logo a{
+   height: 35px;
+}
+.logo img {
+   width: 130px;
+   height: inherit;
+}
+.menu {
+   white-space: nowrap;
+   padding-top: 30px;
+}
+.menu-item {
+   display: inline-block;
+   width: 630px;
+   margin-left: 130px;
+   position: relative;
+}
+.menu-item li {
+   display: inline-block;
+   padding-left: 50px;
+   font-size: 1.5rem;
+   color: #fff;
+}
+.menu-item li:nth-child(3n) a::after {
+   content: "N";
+   font-size: 0.2em;
+   background: #E94E24;
+   border-radius: 10px;
+   position: absolute;
+   padding: 2px 5px;
+   margin-left: 3px;
+}
+.login {
+   background: #fff;
+   color: #00C473;
+   border-radius: 35px;
+   padding: 6px 34px;
+   font-size: 1.6rem;
+   font-weight: 700;
+   margin-left: 220px;
+}
+/* aside 영역 */
+.intro {
+   background-image: url('https://cdn.jandi.com/landing/assets/images/main/baa3d8b4.top_bar_bg.png');
+   position: fixed;
+   width: 100%;
+   top: 0;
+   text-align: center;
+   color: #fff;
+   line-height: 50px;
+   height: 50px;
+   font-size: 1.4rem;
+   z-index: 10;
+}
+.intro-link {
+   background: #fff;
+   color: #46566D;
+   border-radius: 4px;
+   padding: 3px 13px;
+   font-size: 1.3rem;
+   font-weight: 700;
+   margin-left: 9px;
+}
+.icon-right::after {
+   font-family: 'fontello';
+   content: '\f105';
+   margin-left: 8px;
+}
+.icon-cancel {
+    float: right;
+   width: 40px;
+   height: auto;
+   overflow: hidden;
+   white-space: nowrap;
+   font-size: 2em;
+}
+.promotion1 {
+   padding: 90px 90px 0 90px;
+   height: 765px;
+   /* background: purple; */
+}
+.divider {
+   position: absolute;
+   right: 0;
+   top: 300px;
+   width: 10px;
+   height: 10px;
+   border-bottom: 600px solid #fff;
+   border-left: 1480px solid transparent;
+   z-index: -1;
+}
+.promotion1-detail img {
+   width: auto;
+   height: 50px;
+   display: block;
+   margin-bottom: 25px;
+}
+.promotion1-btn {
+  white-space: nowrap;
+}
 .description {
-    font-size: 1.8rem;
-    color: #fff;
-    line-height: 25px;
-    margin-bottom: 45px; 
+   font-size: 1.8rem;
+   color: #fff;
+   line-height: 25px;
+   margin-bottom: 45px;
 }
-
 .btn {
-    font-size: 1.6rem;
-    border-radius: 25px;
-    padding: 10px 70px;
-    font-weight: 700;
-    box-shadow: 5px 8px 5px rgba(0, 0, 0, 0.15);
+   font-size: 1.6rem;
+   border-radius: 25px;
+   padding: 10px 70px;
+   font-weight: 700;
+   box-shadow: 5px 8px 5px rgba(0, 0, 0, 0.15);
 }
-
 .btn1 {
-    background: rgba(11, 146, 90, 0.94);
-    color: #fff;
-    margin-right: 5px;
+   background: rgba(11, 146, 90, 0.94);
+   color: #fff;
+   margin-right: 5px;
 }
-
 .btn2 {
+   background: #fff;
+   color: #00B067;
+}
+.aa {
+   padding-top: 50px;
+   position: relative;
+}
+.bg-item {
+   background: url('/img/please.png') no-repeat;
+   position: absolute;
+   background-size: 700px;
+   width: 700px;
+   height: 620px;
+   right: 0px;
+   bottom: -300px;
+}
+.sponsor{
+    height: 385px;
+    padding: 0 106px 70px 106px;
     background: #fff;
+}
+.sponsor p{
+    text-align: center;
+    font-size: 1.6rem;
+    color: #777;
+}
+.sponsor-wrapper{
+    display: grid;
+    width: 1100px;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-rows: auto 2fr; */
+}
+.sponsor-wrapper img{
+    height: 90px;
+}
+.function{
+    background: #fff;
+    /* padding: 0 106px 70px 106px; */
+}
+.function-heading{
+    text-align: center;
+    font-size: 4.2rem;
+    font-weight: 700;
+    color: #505050;
+    margin-bottom: 150px;
+}
+.function h3{
+    color: #00C473;
+    font-size: 3.6rem;
+    margin-bottom: 50px;
+}
+.function strong{
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 30px;
+    color: #4b4b4b;
+}
+.function p{
+    font-size: 1.6rem;
+    color: #797979;
+    width: 500px;
+}
+.messenger{
+    height: 450px;
+    margin-left: 90px;
+    position: relative;
+}
+.messenger-bg-item{
+    background: url('/img/messenger-bg-item.png') no-repeat;
+    position: absolute;
+    top: 28px;
+    right: 10px;
+    width: 550px;
+    height: 468px;
+    background-size: 560px;
+}
+.file{
+    background-color: #fafafa;
+    position: relative;
+    height: 543px;
+    padding: 230px 110px 0 650px;
+}
+.file-bg-item{
+    background-image: url('/img/file-bg-item.png');
+    background-repeat: no-repeat;
+    width: 650px;
+    height: 436px;
+    background-size: 880px;
+    background-position: 100% 0;
+    display: inline-block;
+    position: absolute;
+    bottom: -13px;
+    left: -90px;
+}
+.admin-menu{
+    display: flex;
+    flex-wrap: wrap;
+    height: 555px;
+}
+.admin-menu p{
+    width: 495px;
+    padding:0 40px;
+}
+.admin-menu-heading{
+    text-align: center;
+    height: auto;
+    margin: 0 310px 0 150px;
+}
+.admin-menu-item{
+    display: flex;
+    justify-content: space-around;
+    order:-1;
+    margin: 62px 0 58px 18px;
+}
+.admin-menu-item li{
+    width: 245px;
+    height: 240px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    transition: 250ms;
+}
+.admin-menu-item li:hover{
+    border-radius: 10px;
+    box-shadow: -3px 5px 10px 5px rgba(0, 0, 0, 0.15);
+    position: relative;
+    bottom: 2px;
+    transition: 250ms;
+}
+.admin-menu-item li:hover strong{
     color: #00B067;
 }
-
-.bg-item {
-    background: red url('/img/please.png') no-repeat;
-    background-size: 550px;
-    width: 560px;
-    height: 480px;
-    top: 0;
-    right: 0;
-    position: absolute;
-} */
-
-/* .sponsor {
+.admin-menu-item li:hover p, .admin-menu-item li:hover span{
+    color: black;
+}
+.admin-menu-item p{
+    width: inherit;
+    padding: 0 40px;
+    color: #737373;
+    font-size: 1.5rem;
+}
+.admin-menu-item span{
     position: relative;
 }
-.linkage {
+.admin-menu-item strong{
+    display: block;
+    color: #737373;
+    font-size: 1.8rem;
+}
+.admin-menu-item [class^='icon'] {
+    font-family: 'fontello';
+    display: inline-block;
+    color: #737373;
+    font-size: 5rem;
+    line-height: 120px;
+    width: inherit;
+}
+.icon1::before{
+    content: '\e802';
+}
+.icon2::before{
+    content: '\e801';
+}
+.icon3::before{
+    content: '\f02e';
+}
+.icon4::before{
+    content: '\f1de';
+}
+.icon5::before{
+    content: '\f512';
+}
+
+.linkage{
+    background-color: #fafafa;
+    padding-top: 20px;
+    height: 858px;
+}
+.linkage-heading{
+    padding: 45px 0;
+}
+.linkage h3, .linkage p{
+    text-align: center;
+    margin: 0 400px;
+}
+.linkage-icon-list{
+    display: flex;
+    margin: 32px 185px 80px 185px;
+    justify-content: space-between;
+}
+.linkage-icon-list img{
+    width: 90px;
     position: relative;
-} */
+    bottom: 0px;
+    border-radius: 10px;
+    box-shadow: -1px 1px 10px 5px rgba(0, 0, 0, 0.15);
+}
+.selected{
+    box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+.linkage-icon-list li:nth-child(n+2):hover{
+    box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.15);
+    transition: 250ms;
+    border-radius: 10px;
+    position: relative;
+    bottom: 2px;
+    cursor: pointer;
+}
+.linkage-bg-item{
+    background: url('/img/linkage-bg-item.png') no-repeat;
+    background-size: 1152px;
+    width: 1152px;
+    height: 440px;
+    display: block;
+    margin: 0 auto;
+}
