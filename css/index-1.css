@@ -380,6 +380,8 @@ header, main {
     width: inherit;
     color: #737373;
     font-size: 15px;
+    box-sizing: border-box;
+    padding: 0 40px;
  }
  
  .admin-menu-item [class^='icon'] {
