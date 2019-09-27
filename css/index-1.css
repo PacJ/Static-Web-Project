@@ -9,7 +9,6 @@
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
     box-sizing: border-box;
 }
 
@@ -182,9 +181,9 @@ header, main {
 }
 
 .btn {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     border-radius: 25px;
-    padding: 10px 70px;
+    padding: 7px 65px;
     font-weight: 700;
     box-shadow: 5px 8px 5px rgba(0, 0, 0, 0.15);
     transition: 245ms;
@@ -207,6 +206,10 @@ header, main {
     background: #fff;
     color: #00B067;
  }
+
+.promotion1 .btn {
+    font-size: 16px;
+}
 
  .promotion1-bg-item {
     background:url('/img/bg.png') no-repeat;
@@ -432,11 +435,11 @@ header, main {
     margin: 32px 185px 80px 185px;
     justify-content: space-between;
     cursor: pointer;
+    height: 90px;
  }
  
  .linkage-icon-list img {
     width: 90px;
-    background: #fff;
     border-radius: 10px;
     box-shadow: -1px 1px 10px 5px rgba(0, 0, 0, 0.15);
     position: relative;
@@ -448,6 +451,7 @@ header, main {
     position: relative;
     box-shadow: -6px 8px 10px 5px rgba(0, 0, 0, 0.15);
     bottom: 2px;
+    border-radius: 10px;
  }
  
  .selected {
@@ -493,6 +497,7 @@ header, main {
     background-color: #00C473;
     height:330px;
     padding-top: 95px;
+    margin: 0 -87px;
     overflow: hidden;
     position: relative;
 }
@@ -529,7 +534,7 @@ header, main {
 }
 .promotion2-btn .btn{
     top: 40px;
-    left: 324px;
+    left: 411px;
 }
 
 /* 푸터 */
